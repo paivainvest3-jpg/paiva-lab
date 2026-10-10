@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agente demonstrativo para triagem de documentos com schema fechado, validações determinísticas, confidence threshold, abstention e revisão humana.">
+  <meta name="theme-color" content="#071018">
+  <title>Document Intake Agent — Paiva Lab</title>
+  <link rel="stylesheet" href="../../project.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../../index.html"><span>P//</span> PAIVA LAB</a>
+      <a class="back" href="../../index.html#projetos">← Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">RAG · Document AI · Reliable Agents</div>
+      <div class="status-row">
+        <span class="pill lab">Lab demonstrativo</span>
+        <span class="pill">Case público</span>
+      </div>
+      <h1>Document Intake Agent</h1>
+      <p>Agente demonstrativo para triagem de documentos com schema fechado, validações determinísticas, confidence threshold, abstention e revisão humana.</p>
+      <div class="stack"><span>RAG</span><span>Structured Output</span><span>Human-in-the-loop</span><span>Evals</span></div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">Falar comigo</a>
+        <a class="btn secondary" href="https://br.linkedin.com/in/pedro-paiva-82b420205" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/paivainvest3-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+    <section class="section"><div class="container"><h2>Cenário</h2><div class="lead">Uma operação recebe documentos, precisa identificar o tipo, extrair campos, validar consistência e decidir para qual fila encaminhar cada caso.</div></div></section><section class="section"><div class="container"><h2>Fluxo confiável</h2><div class="flow"><div class="node"><strong>Ingestão</strong><span>hash e metadados</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Extração</strong><span>texto e campos</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Classificação</strong><span>schema fechado</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Validação</strong><span>regras determinísticas</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Confidence</strong><span>threshold</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Roteamento</strong><span>auto ou revisão humana</span></div></div></div></section><section class="section"><div class="container"><h2>Exemplo de saída</h2><pre class="code">{
+  &quot;document_type&quot;: &quot;proof_of_address&quot;,
+  &quot;confidence&quot;: 0.94,
+  &quot;fields&quot;: {
+    &quot;name&quot;: &quot;EXAMPLE PERSON&quot;,
+    &quot;issue_date&quot;: &quot;2026-08-01&quot;
+  },
+  &quot;validation&quot;: {
+    &quot;required_fields_present&quot;: true,
+    &quot;date_within_policy&quot;: true
+  },
+  &quot;route&quot;: &quot;auto_approved&quot;
+}</pre></div></section><section class="section"><div class="container"><h2>O diferencial</h2><div class="grid-2"><article class="card"><h3>Schema fechado</h3><p>A IA responde dentro de uma estrutura validável.</p></article>
+<article class="card"><h3>Abstention</h3><p>O sistema sabe quando não há evidência suficiente.</p></article>
+<article class="card"><h3>Human-in-the-loop</h3><p>Exceções seguem para revisão, não para decisão automática forçada.</p></article>
+<article class="card"><h3>Evals</h3><p>Dataset de avaliação acompanha qualidade e regressões.</p></article></div></div></section><section class="section"><div class="container"><h2>Enquadramento</h2><div class="lead">Este é um laboratório demonstrativo. O objetivo é mostrar desenho de agente confiável, não alegar implantação em cliente.</div></div></section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">LET'S BUILD</div>
+          <h2>Quer construir algo parecido?</h2>
+          <p>Projetos de automação, IA aplicada, risco, fraude e sistemas orientados a decisão.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">pedrophfpaiva@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>PAIVA LAB // AI · RISK · AUTOMATION</span>
+    <span>Document Intake Agent</span>
+  </footer>
+</body>
+</html>

@@ -24,6 +24,12 @@ Portfólio profissional de Paiva focado em engenharia aplicada a risco, fraude, 
 
 Os projetos `Fold AI`, `Aureon`, `Family Finance Copilot` e `Personal Workspace` são projetos pessoais reais. `Risk Intelligence Engine` é uma reconstrução sanitizada de padrões de engenharia e modelagem usados em trabalho com risco, usando apenas dados sintéticos e sem regras, dados ou propriedade intelectual de empregadores. Os demais itens marcados como **Lab demonstrativo** foram criados para demonstrar capacidades técnicas e não devem ser apresentados como projetos de cliente.
 
+## Contato
+
+- **E-mail:** pedrophfpaiva@gmail.com
+- **LinkedIn:** https://br.linkedin.com/in/pedro-paiva-82b420205
+- **GitHub:** https://github.com/paivainvest3-jpg
+
 ## Rodar o site
 
 O site é estático e não precisa de build:
@@ -42,7 +48,6 @@ Abra `http://localhost:8080`.
 
 ## Antes de publicar
 
-- adicionar links reais de LinkedIn/GitHub/contato;
 - revisar nomes de tecnologias e qualquer informação que possa ser confidencial;
 - adicionar screenshots próprias de Fold AI e Aureon em `assets/`;
 - trocar qualquer métrica demonstrativa por resultados reais somente quando puder ser comprovada.

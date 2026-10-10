@@ -16,13 +16,13 @@ Portfólio profissional de Paiva focado em engenharia aplicada a risco, fraude, 
 2. **Risk Intelligence Engine** — case sanitizado e reproduzível com dados sintéticos, clustering e score de risco.
 3. **Aureon** — Life RPG local-first com Android/Capacitor, SQLite, IA local e arquitetura orientada a eventos.
 4. **Family Finance Copilot** — Google Sheets + IA para consultas, projeções e análise de cenários financeiros, com demo sintética.
-5. **Nharryme Workspace** — workspace web pessoal; case público focado em produto/UX e privacidade.
+5. **Personal Workspace** — workspace web pessoal; case público focado em produto/UX e privacidade.
 6. **OpsFlow AI** — lab demonstrativo de automação operacional auditável.
 7. **Document Intake Agent** — lab demonstrativo de triagem de documentos com structured output, abstention e human-in-the-loop.
 
 ## Transparência
 
-Os projetos `Fold AI`, `Aureon`, `Family Finance Copilot` e `Nharryme Workspace` são projetos pessoais reais. `Risk Intelligence Engine` é uma reconstrução sanitizada de padrões de engenharia e modelagem usados em trabalho com risco, usando apenas dados sintéticos e sem regras, dados ou propriedade intelectual de empregadores. Os demais itens marcados como **Lab demonstrativo** foram criados para demonstrar capacidades técnicas e não devem ser apresentados como projetos de cliente.
+Os projetos `Fold AI`, `Aureon`, `Family Finance Copilot` e `Personal Workspace` são projetos pessoais reais. `Risk Intelligence Engine` é uma reconstrução sanitizada de padrões de engenharia e modelagem usados em trabalho com risco, usando apenas dados sintéticos e sem regras, dados ou propriedade intelectual de empregadores. Os demais itens marcados como **Lab demonstrativo** foram criados para demonstrar capacidades técnicas e não devem ser apresentados como projetos de cliente.
 
 ## Rodar o site
 

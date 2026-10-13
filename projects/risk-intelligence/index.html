@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arquitetura de risco que combina segmentação comportamental, scoring supervisionado e regras contextuais para priorizar casos com menos falsos positivos.">
+  <meta name="theme-color" content="#071018">
+  <title>Risk Intelligence Engine — Paiva Lab</title>
+  <link rel="stylesheet" href="../../project.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../../index.html"><span>P//</span> PAIVA LAB</a>
+      <a class="back" href="../../index.html#projetos">← Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Risk Analytics · Fraud Detection · Machine Learning</div>
+      <div class="status-row">
+        <span class="pill sanitized">Case sanitizado</span>
+        <span class="pill">Case público</span>
+      </div>
+      <h1>Risk Intelligence Engine</h1>
+      <p>Arquitetura de risco que combina segmentação comportamental, scoring supervisionado e regras contextuais para priorizar casos com menos falsos positivos.</p>
+      <div class="stack"><span>Python</span><span>SQL</span><span>KMeans</span><span>HDBSCAN</span><span>LightGBM</span><span>Databricks</span></div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">Falar comigo</a>
+        <a class="btn secondary" href="https://br.linkedin.com/in/pedro-paiva-82b420205" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/paivainvest3-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+    <section class="section"><div class="container"><h2>Objetivo</h2><div class="lead">Demonstrar uma arquitetura generalizável de priorização de risco sem expor dados, thresholds, regras ou propriedade intelectual de empregadores. Toda demonstração usa dados sintéticos.</div></div></section><section class="section"><div class="container"><h2>Pipeline</h2><div class="flow"><div class="node"><strong>Eventos</strong><span>transações e comportamento</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Feature Store</strong><span>sinais agregados</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Clustering</strong><span>KMeans / HDBSCAN</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Modelo</strong><span>LightGBM</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Risk Composer</strong><span>regras + modelo + cluster</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Fila priorizada</strong><span>investigação humana</span></div></div></div></section><section class="section"><div class="container"><h2>Sinais demonstrativos</h2><div class="grid-2"><article class="card"><h3>Comportamento</h3><p>idade da conta, velocidade, recorrência e frequência agregada.</p></article>
+<article class="card"><h3>Relacionamentos</h3><p>entidades relacionadas, dispositivo/rede e concentração.</p></article>
+<article class="card"><h3>Similaridade</h3><p>padrões próximos entre usuários e desvio contra cluster de pares.</p></article>
+<article class="card"><h3>Valor operacional</h3><p>composição explicável para investigação e monitoramento.</p></article></div></div></section><section class="section"><div class="container"><h2>O que medir em produção</h2><div class="metric-grid"><div class="metric"><strong>Precision / Recall</strong><span>por faixa de score</span></div><div class="metric"><strong>False Positive</strong><span>taxa e custo operacional</span></div><div class="metric"><strong>Drift</strong><span>features, clusters e score</span></div></div></div></section><section class="section"><div class="container"><h2>Transparência</h2><div class="lead">Este case é uma reconstrução sanitizada. O repositório não contém dados reais de clientes, regras de produção, thresholds proprietários ou detalhes internos de empregadores.</div></div></section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">LET'S BUILD</div>
+          <h2>Quer construir algo parecido?</h2>
+          <p>Projetos de automação, IA aplicada, risco, fraude e sistemas orientados a decisão.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">pedrophfpaiva@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>PAIVA LAB // AI · RISK · AUTOMATION</span>
+    <span>Risk Intelligence Engine</span>
+  </footer>
+</body>
+</html>

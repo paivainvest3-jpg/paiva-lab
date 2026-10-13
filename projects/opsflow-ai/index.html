@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pipeline demonstrativo para receber arquivos e eventos, validar dados, aplicar regras/IA somente onde necessário e entregar uma saída auditável.">
+  <meta name="theme-color" content="#071018">
+  <title>OpsFlow AI — Paiva Lab</title>
+  <link rel="stylesheet" href="../../project.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../../index.html"><span>P//</span> PAIVA LAB</a>
+      <a class="back" href="../../index.html#projetos">← Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Process Automation · AI Workflow</div>
+      <div class="status-row">
+        <span class="pill lab">Lab demonstrativo</span>
+        <span class="pill">Case público</span>
+      </div>
+      <h1>OpsFlow AI</h1>
+      <p>Pipeline demonstrativo para receber arquivos e eventos, validar dados, aplicar regras/IA somente onde necessário e entregar uma saída auditável.</p>
+      <div class="stack"><span>Python</span><span>FastAPI</span><span>Webhooks</span><span>LLM</span><span>Audit Log</span></div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">Falar comigo</a>
+        <a class="btn secondary" href="https://br.linkedin.com/in/pedro-paiva-82b420205" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/paivainvest3-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+    <section class="section"><div class="container"><h2>Cenário</h2><div class="lead">Uma equipe recebe CSV/Excel e eventos por webhook. Hoje alguém valida colunas, procura inconsistências, categoriza exceções, consolida o resultado e envia um resumo.</div></div></section><section class="section"><div class="container"><h2>Arquitetura</h2><div class="flow"><div class="node"><strong>Upload / Webhook</strong><span>entrada</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Validação</strong><span>regras determinísticas</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Normalização</strong><span>schema comum</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Rules + LLM</strong><span>IA só no ambíguo</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Exception Queue</strong><span>baixa confiança</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Output + Audit</strong><span>resultado rastreável</span></div></div></div></section><section class="section"><div class="container"><h2>Princípios</h2><div class="grid-2"><article class="card"><h3>Determinístico primeiro</h3><p>IA não valida aquilo que pode ser validado com regra clara.</p></article>
+<article class="card"><h3>Structured output</h3><p>Saída fechada e validável, sem texto livre no núcleo do processo.</p></article>
+<article class="card"><h3>Abstenção</h3><p>Baixa confiança gera revisão humana em vez de chute.</p></article>
+<article class="card"><h3>Auditabilidade</h3><p>Inputs, versão, decisão e resultado ficam rastreáveis.</p></article></div></div></section><section class="section"><div class="container"><h2>Enquadramento</h2><div class="lead">Este é um laboratório de portfólio, não um projeto de cliente. Ele existe para demonstrar como eu estruturaria uma automação operacional confiável e vendável.</div></div></section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">LET'S BUILD</div>
+          <h2>Quer construir algo parecido?</h2>
+          <p>Projetos de automação, IA aplicada, risco, fraude e sistemas orientados a decisão.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">pedrophfpaiva@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>PAIVA LAB // AI · RISK · AUTOMATION</span>
+    <span>OpsFlow AI</span>
+  </footer>
+</body>
+</html>

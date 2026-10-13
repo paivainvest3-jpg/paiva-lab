@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assistente pessoal para Galaxy Z Fold que interpreta linguagem natural e executa ações permitidas no Android com guardrails, ACK e estado persistente.">
+  <meta name="theme-color" content="#071018">
+  <title>Fold AI — Paiva Lab</title>
+  <link rel="stylesheet" href="../../project.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../../index.html"><span>P//</span> PAIVA LAB</a>
+      <a class="back" href="../../index.html#projetos">← Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">AI Agent · Android Automation · Edge Orchestration</div>
+      <div class="status-row">
+        <span class="pill real">Projeto pessoal real</span>
+        <span class="pill">Case público</span>
+      </div>
+      <h1>Fold AI</h1>
+      <p>Assistente pessoal para Galaxy Z Fold que interpreta linguagem natural e executa ações permitidas no Android com guardrails, ACK e estado persistente.</p>
+      <div class="stack"><span>Cloudflare Workers</span><span>Workers AI</span><span>Tasker</span><span>AutoRemote</span><span>D1</span><span>PWA</span></div>
+      <div class="actions">
+        <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">Falar comigo</a>
+        <a class="btn secondary" href="https://br.linkedin.com/in/pedro-paiva-82b420205" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/paivainvest3-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+    <section class="section"><div class="container"><h2>O problema</h2><div class="lead">Assistentes mobile tradicionais respondem bem, mas raramente executam sequências personalizadas no aparelho de forma controlada. O objetivo foi separar inteligência de execução: o modelo entende a intenção; o Android executa apenas ações permitidas.</div></div></section><section class="section"><div class="container"><h2>Arquitetura</h2><div class="flow"><div class="node"><strong>Texto / Voz / PWA</strong><span>entrada do usuário</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Cloudflare Worker</strong><span>orquestração</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Workers AI / LLM</strong><span>interpretação</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Guardrails</strong><span>allowlist de ações</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>AutoRemote + Tasker</strong><span>execução determinística</span></div>
+<div class="arrow">→</div>
+<div class="node"><strong>Android + ACK</strong><span>confirmação e estado</span></div></div></div></section><section class="section"><div class="container"><h2>Decisões de engenharia</h2><div class="grid-2"><article class="card"><h3>LLM não controla o aparelho</h3><p>Tasker funciona como executor determinístico. O modelo produz uma ação estruturada, não comandos irrestritos.</p></article>
+<article class="card"><h3>Protocolo explícito</h3><p>Ações trafegam com ACTION, VALUE, EXTRA, request_id e command_id para rastreabilidade.</p></article>
+<article class="card"><h3>Estado persistente</h3><p>D1 guarda estado e histórico de comandos, permitindo observar → decidir → executar → verificar.</p></article>
+<article class="card"><h3>Segurança por intenção</h3><p>Comandos sensíveis dependem de intenção explícita e segredos permanecem no Worker.</p></article></div></div></section><section class="section"><div class="container"><h2>O que este projeto demonstra</h2><div class="card"><ul><li>agent orchestration e tool calling com guardrails</li><li>integração cloud ↔ device</li><li>protocolo com ACK, retries e idempotência</li><li>produto mobile-first / PWA</li><li>separação entre raciocínio probabilístico e execução determinística</li></ul></div></div></section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">LET'S BUILD</div>
+          <h2>Quer construir algo parecido?</h2>
+          <p>Projetos de automação, IA aplicada, risco, fraude e sistemas orientados a decisão.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:pedrophfpaiva@gmail.com">pedrophfpaiva@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>PAIVA LAB // AI · RISK · AUTOMATION</span>
+    <span>Fold AI</span>
+  </footer>
+</body>
+</html>
